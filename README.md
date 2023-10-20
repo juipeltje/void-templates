@@ -5,7 +5,7 @@ Note #1: don't forget to also set the `XBPS_ALLOW_RESTRICTED=yes` option in `etc
 3. git clone this repo and move the `picom-ft-labs` folder into the `srcpkgs` folder:
 ```
 git clone https://github.com/juipeltje/picom-FT-Labs-template
-mv picom-FT-LABS-template void-packages/srcpkgs/picom-ft-labs
+mv picom-FT-Labs-template void-packages/srcpkgs/picom-ft-labs
 ```
 3. cd into `void-packages`, then build and install the package:
 ```
