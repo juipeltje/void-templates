@@ -1,6 +1,6 @@
 # Void Linux template file for xbps-src
 How to install:
-1. make sure to follow the instructions on how to setup xbps-src first on the void-packages Github page: https://github.com/void-linux/void-packages
+1. make sure to follow the instructions on how to setup xbps-src first on the void-packages Github page: https://github.com/void-linux/void-packages <br />
 Note #1: don't forget to also enable the ALLOW_RESTRICTED option mentioned in their instructions.
 3. git clone this repo and move the picom-ft-labs folder into the srcpkgs folder:
 ```
