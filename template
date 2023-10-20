@@ -1,0 +1,31 @@
+# Template file for 'picom-ft-labs'
+pkgname=picom-ft-labs
+version=10.2
+revision=1
+wrksrc=picom-ft-labs
+build_style=meson
+configure_args="-Dwith_docs=true"
+hostmakedepends="git gcc pkg-config asciidoc"
+makedepends="libX11-devel libXext-devel xorgproto libxcb-devel xcb-util-devel dbus-devel libconfig-devel libev-devel pcre2-devel
+ pixman-devel xcb-util-image-devel xcb-util-renderutil-devel
+ libxdg-basedir-devel uthash MesaLib-devel"
+depends="desktop-file-utils"
+short_desc="Lightweight compositor for X11 (previously a compton fork)"
+maintainer="juipeltje <joppe4444@outlook.com>"
+license="MIT, MPL-2.0"
+homepage="https://github.com/FT-Labs/picom"
+
+do_fetch() {
+  git clone --single-branch --branch next --depth=1 "https://github.com/FT-Labs/picom" ${wrksrc}
+}
+
+post_install() {
+	vlicense LICENSES/MIT
+	vsconf picom.sample.conf
+}
+
+picom-ft-labs_package() {
+	depends="${sourcepkg}>=${version}_${revision}"
+	build_style=meta
+	short_desc+="(a picom fork that includes animations)"
+}
