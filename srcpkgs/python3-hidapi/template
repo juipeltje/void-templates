@@ -1,0 +1,22 @@
+# Template file for 'python3-hidapi'
+pkgname=python3-hidapi
+version=0.14.0
+revision=1
+build_style=python3-pep517
+hostmakedepends="python3-setuptools python3-Cython0.29 python3-wheel python3-devel libusb-devel eudev-libudev-devel"
+depends="python3 hidapi"
+conflicts="python3-hid"
+short_desc="A Cython interface to HIDAPI library"
+maintainer="juipeltje <joppe4444@outlook.com>"
+license="GPL-3.0-only, BSD, custom:cython-hidapi"
+homepage="https://pypi.org/project/hidapi/#description"
+distfiles="https://files.pythonhosted.org/packages/95/0e/c106800c94219ec3e6b483210e91623117bfafcf1decaff3c422e18af349/hidapi-0.14.0.tar.gz"
+checksum="a7cb029286ced5426a381286526d9501846409701a29c2538615c3d1a612b8be"
+
+post_install() {
+	vlicense LICENSE.txt
+	vlicense LICENSE-bsd.txt
+	vlicense LICENSE-gpl3.txt
+	vlicense LICENSE-orig.txt
+	vdoc README.rst
+}
