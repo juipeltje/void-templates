@@ -24,7 +24,7 @@ cp -r void-templates/srcpkgs/python3-colorlog void-packages/srcpkgs/
 cp -r void-templates/srcpkgs/python3-hidapi void-packages/srcpkgs/
 cp -r void-templates/srcpkgs/liquidctl void-packages/srcpkgs/
 ```
-2. now build the `python3-colorlog` and `python3-hidapi` packages using `xbps-src`:
+2. now cd into `void-packages` and build the `python3-colorlog` and `python3-hidapi` packages using `xbps-src`:
 ```
 cd void-packages
 ./xbps-src pkg python3-colorlog
@@ -37,14 +37,14 @@ sudo xbps-install -R hostdir/binpkgs liquidctl
 ```
 
 ## picom-FT-Labs
-copy the `picom-ft-labs` folder into the `srcpkgs` folder:
+copy the `picom-ft-labs` folder into the `void-packages/srcpkgs` folder:
 ```
-cp -r picom-FT-Labs-template void-packages/srcpkgs/picom-ft-labs
+cp -r void-templates/srcpkgs/picom-ft-labs void-packages/srcpkgs/
 ```
 3. cd into `void-packages`, then build and install the package:
 ```
 cd void-packages
 ./xbps-src pkg picom-ft-labs
-sudo xbps-install --repository=hostdir/binpkgs picom-ft-labs
+sudo xbps-install -R hostdir/binpkgs picom-ft-labs
 ```
 Note: This fork of picom seems to still be actively developed. if you want to update to a package with newer commits, simply edit the version and/or revision number in the template file, and then rebuild the package, and install it as an update with `xbps-install`.
