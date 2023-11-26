@@ -47,4 +47,3 @@ cd void-packages
 ./xbps-src pkg picom-ft-labs
 sudo xbps-install -R hostdir/binpkgs picom-ft-labs
 ```
-Note: This fork of picom seems to still be actively developed. if you want to update to a package with newer commits, simply edit the version and/or revision number in the template file, and then rebuild the package, and install it as an update with `xbps-install`.
