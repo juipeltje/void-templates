@@ -4,10 +4,10 @@ This is my personal repo where i keep my template files that i use to build pack
 
 the following package templates are in my repo:
 
-- [liquidctl](liquidctl)
+- [liquidctl](##liquidctl)
 - python3-colorlog (used as a dependency for liquidctl)
 - python3-hidapi (used as a dependency for liquidctl)
-- [picom-FT-Labs](picom-ft-labs)
+- [picom-FT-Labs](##picom-ft-labs)
 
 ## Setting up your system to build packages with template files
 1. make sure to follow the instructions on how to setup `xbps-src` first on the `void-packages` Github page: https://github.com/void-linux/void-packages <br />
