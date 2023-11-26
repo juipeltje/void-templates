@@ -37,11 +37,11 @@ sudo xbps-install -R hostdir/binpkgs liquidctl
 ```
 
 ## picom-FT-Labs
-copy the `picom-ft-labs` folder into the `void-packages/srcpkgs` folder:
+1. copy the `picom-ft-labs` folder into the `void-packages/srcpkgs` folder:
 ```
 cp -r void-templates/srcpkgs/picom-ft-labs void-packages/srcpkgs/
 ```
-3. cd into `void-packages`, then build and install the package:
+2. cd into `void-packages`, then build and install the package:
 ```
 cd void-packages
 ./xbps-src pkg picom-ft-labs
