@@ -4,10 +4,10 @@ version=2.2.3
 revision=1
 build_style=cmake
 make_build_target="fastfetch"
-hostmakedepends="pkg-config libnm  OpenCL-Headers Vulkan-Headers vulkan-loader ddcutil"
+hostmakedepends="pkg-config OpenCL-Headers Vulkan-Headers vulkan-loader ddcutil"
 makedepends="libpciaccess-devel chafa-devel dbus-devel dconf-devel glib-devel libmagick-devel libX11-devel
 		libxcb-devel libXrandr-devel MesaLib-devel ocl-icd-devel pciutils-devel wayland-devel 
-		xfconf-devel zlib-devel sqlite-devel pulseaudio-devel"
+		xfconf-devel zlib-devel sqlite-devel pulseaudio-devel libnma-devel"
 depends="glibc"   
 short_desc="neofetch clone written in C, and thus faster"
 maintainer="juipeltje <joppe4444@outlook.com>"
