@@ -14,6 +14,8 @@ the following package templates are in my repo:
 - [nordic-kvantum](#nordic-kvantum)
 - [gruvbox-material-gtk](#gruvbox-material-gtk)
 - [gruvbox-kvantum](#gruvbox-kvantum)
+- [ubuntu-nerd-font-ttf](#ubuntu-nerd-font-ttf)
+- [mononoki-nerd-font-ttf](#mononoki-nerd-font-ttf)
 - [picom-FT-Labs](#picom-ft-labs)
 
 ## Setting up your system to build packages with template files
@@ -125,6 +127,30 @@ cp -r void-templates/srcpkgs/gruvbox-kvantum void-packages/srcpkgs/
 ```
 ./xbps-src pkg gruvbox-kvantum
 sudo xbps-install -R hostdir/binpkgs gruvbox-kvantum
+```
+
+## ubuntu-nerd-font-ttf
+
+1. copy the `ubuntu-nerd-font-ttf` folder into the `void-packages/srcpkgs` folder:
+```
+cp -r void-templates/srcpkgs/ubuntu-nerd-font-ttf void-packages/srcpkgs/
+```
+2. cd into `void-packages`, then build and install the package:
+```
+./xbps-src pkg ubuntu-nerd-font-ttf
+sudo xbps-install -R hostdir/binpkgs ubuntu-nerd-font-ttf
+```
+
+## mononoki-nerd-font-ttf
+
+1. copy the `mononoki-nerd-font-ttf` folder into the `void-packages/srcpkgs` folder:
+```
+cp -r void-templates/srcpkgs/mononoki-nerd-font-ttf void-packages/srcpkgs/
+```
+2. cd into `void-packages`, then build and install the package:
+```
+./xbps-src pkg mononoki-nerd-font-ttf
+sudo xbps-install -R hostdir/binpkgs mononoki-nerd-font-ttf
 ```
 
 ## picom-FT-Labs
