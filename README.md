@@ -7,6 +7,13 @@ the following package templates are in my repo:
 - [liquidctl](#liquidctl)
 - python3-colorlog (used as a dependency for liquidctl)
 - python3-hidapi (used as a dependency for liquidctl)
+- [fastfetch](#fastfetch)
+- [mint-y-icons](#mint-y-icons)
+- [phinger-cursors](#phinger-cursors)
+- [nordic-gtk](#nordic-gtk)
+- [nordic-kvantum](#nordic-kvantum)
+- [gruvbox-material-gtk](#gruvbox-material-gtk)
+- [gruvbox-kvantum](#gruvbox-kvantum)
 - [picom-FT-Labs](#picom-ft-labs)
 
 ## Setting up your system to build packages with template files
@@ -34,6 +41,90 @@ cd void-packages
 ```
 ./xbps-src pkg liquidctl
 sudo xbps-install -R hostdir/binpkgs liquidctl
+```
+
+## fastfetch
+
+1. copy the `fastfetch` folder into the `void-packages/srcpkgs` folder:
+```
+cp -r void-templates/srcpkgs/fastfetch void-packages/srcpkgs/
+```
+2. cd into `void-packages`, then build and install the package:
+```
+./xbps-src pkg fastfetch
+sudo xbps-install -R hostdir/binpkgs fastfetch
+```
+
+## mint-y-icons
+
+1. copy the `mint-y-icons` folder into the `void-packages/srcpkgs` folder:
+```
+cp -r void-templates/srcpkgs/mint-y-icons void-packages/srcpkgs/
+```
+2. cd into `void-packages`, then build and install the package:
+```
+./xbps-src pkg mint-y-icons
+sudo xbps-install -R hostdir/binpkgs mint-y-icons
+```
+
+## phinger-cursors
+
+1. copy the `phinger-cursors` folder into the `void-packages/srcpkgs` folder:
+```
+cp -r void-templates/srcpkgs/phinger-cursors void-packages/srcpkgs/
+```
+2. cd into `void-packages`, then build and install the package:
+```
+./xbps-src pkg phinger-cursors
+sudo xbps-install -R hostdir/binpkgs phinger-cursors
+```
+
+## nordic-gtk
+
+1. copy the `nordic-gtk` folder into the `void-packages/srcpkgs` folder:
+```
+cp -r void-templates/srcpkgs/nordic-gtk void-packages/srcpkgs/
+```
+2. cd into `void-packages`, then build and install the package:
+```
+./xbps-src pkg nordic-gtk
+sudo xbps-install -R hostdir/binpkgs nordic-gtk
+```
+
+## nordic-kvantum
+
+1. copy the `nordic-kvantum` folder into the `void-packages/srcpkgs` folder:
+```
+cp -r void-templates/srcpkgs/nordic-kvantum void-packages/srcpkgs/
+```
+2. cd into `void-packages`, then build and install the package:
+```
+./xbps-src pkg nordic-kvantum
+sudo xbps-install -R hostdir/binpkgs nordic-kvantum
+```
+
+## gruvbox-material-gtk
+
+1. copy the `gruvbox-material-gtk` folder into the `void-packages/srcpkgs` folder:
+```
+cp -r void-templates/srcpkgs/gruvbox-material-gtk void-packages/srcpkgs/
+```
+2. cd into `void-packages`, then build and install the package:
+```
+./xbps-src pkg gruvbox-material-gtk
+sudo xbps-install -R hostdir/binpkgs gruvbox-material-gtk
+```
+
+## gruvbox-kvantum
+
+1. copy the `gruvbox-kvantum` folder into the `void-packages/srcpkgs` folder:
+```
+cp -r void-templates/srcpkgs/gruvbox-kvantum void-packages/srcpkgs/
+```
+2. cd into `void-packages`, then build and install the package:
+```
+./xbps-src pkg gruvbox-kvantum
+sudo xbps-install -R hostdir/binpkgs gruvbox-kvantum
 ```
 
 ## picom-FT-Labs
