@@ -1,0 +1,18 @@
+# Template file for 'nordic-kvantum'
+pkgname=nordic-kvantum
+version=2.2.0
+revision=1
+depends="kvantum"
+short_desc="Kvantum theme created using the Nord color palette"
+maintainer="juipeltje <joppe4444@outlook.com>"
+license="GPL-3.0-only"
+homepage="https://github.com/EliverLara/Nordic"
+distfiles="https://github.com/EliverLara/Nordic/archive/refs/tags/v${version}.tar.gz"
+checksum="ac8624d6f4e12e7e333d083500dbb52fab03553107482391728fcf3dcc0ec25f"
+
+do_install() {
+	vlicense LICENSE
+	vdoc README.md
+	vmkdir usr/share/Kvantum
+	vcopy kde/kvantum/Nordic usr/share/Kvantum/
+}

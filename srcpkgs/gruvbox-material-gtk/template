@@ -1,0 +1,25 @@
+# Template file for 'gruvbox-material-gtk'
+pkgname=gruvbox-material-gtk
+version=1
+revision=1
+hostmakedepends="git"
+short_desc="gtk theme ported from sainnhe's gruvbox-material color palette"
+maintainer="juipeltje <joppe4444@outlook.com>"
+license="MIT"
+homepage="https://github.com/TheGreatMcPain/gruvbox-material-gtk"
+
+do_fetch() {
+	git clone https://github.com/TheGreatMcPain/gruvbox-material-gtk ${wrksrc}
+}
+
+do_install() {
+	vlicense LICENSE
+	vdoc README.md
+	vmkdir usr/share/themes
+	vcopy themes/Gruvbox-Material-Dark usr/share/themes/
+}
+
+post_install() {
+	rm -f ${DESTDIR}/usr/share/themes/Gruvbox-Material-Dark/COPYING
+	rm -f ${DESTDIR}/usr/share/themes/Gruvbox-Material-Dark/INSTALL_GDM_THEME.md
+}

@@ -1,0 +1,23 @@
+# Template file for 'nordic-gtk'
+pkgname=nordic-gtk
+version=2.2.0
+revision=1
+short_desc="gtk3.20+ theme created using the Nord color palette"
+maintainer="juipeltje <joppe4444@outlook.com>"
+license="GPL-3.0-only"
+homepage="https://github.com/EliverLara/Nordic"
+distfiles="https://github.com/EliverLara/Nordic/releases/download/v${version}/Nordic.tar.xz"
+checksum="d162d694e13bec518636b193fbe84ccea44da9a81a89015c6713f6b258ee36d5"
+
+do_install() {
+	vlicense LICENSE
+	vdoc README.md
+	vmkdir usr/share/themes/Nordic
+	vcopy * usr/share/themes/Nordic/
+}
+
+post_install() {
+	rm -f ${DESTDIR}/usr/share/themes/Nordic/LICENSE
+	rm -f ${DESTDIR}/usr/share/themes/Nordic/README.md
+}
+

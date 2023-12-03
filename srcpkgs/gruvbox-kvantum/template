@@ -1,0 +1,15 @@
+# Template file for 'gruvbox-kvantum'
+pkgname=gruvbox-kvantum
+version=1.1
+revision=1
+short_desc="kvantum theme based on the gruvbox color palette"
+maintainer="juipeltje <joppe4444@outlook.com>"
+license="Public Domain"
+homepage="https://github.com/theglitchh/Gruvbox-Kvantum"
+distfiles="https://github.com/theglitchh/Gruvbox-Kvantum/releases/download/v${version}/gruvbox-kvantum-v${version}.zip"
+checksum="c4e8d1a4d04fa1020359bec245d3ff4291672e4696e590ccd9aea8f4d1ff8317"
+
+do_install() {
+	vmkdir usr/share/Kvantum/gruvbox-kvantum
+	vcopy * usr/share/Kvantum/gruvbox-kvantum/
+}
