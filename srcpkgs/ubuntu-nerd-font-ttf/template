@@ -1,0 +1,25 @@
+# Template file for 'ubuntu-nerd-font-ttf'
+pkgname=ubuntu-nerd-font-ttf
+version=3.1.1
+revision=1
+conflicts="nerd-fonts nerd-fonts-ttf nerd-fonts-symbols-ttf" 
+short_desc="Ubuntu font patched with icons"
+maintainer="juipeltje <joppe4444@outlook.com>"
+license="Apache-2.0, OFL-1.1, MIT, CC-BY-4.0, Unlicense, custom:Ubuntu Font License 1.0, custom:Free License"
+homepage="https://www.nerdfonts.com/"
+distfiles="https://github.com/ryanoasis/nerd-fonts/releases/download/v${version}/Ubuntu.tar.xz"
+checksum="75e0d25255b2b92cb7975442037fe707194ded123752a24cae092b0d2fc6a076"
+
+do_install() {
+	vlicense LICENCE.txt LICENSE
+	vlicense LICENCE-FAQ.txt LICENSE-FAQ
+	vdoc README.md
+	vmkdir usr/share/fonts/TTF/Ubuntu-Nerd-Font
+	vcopy * usr/share/fonts/TTF/Ubuntu-Nerd-Font/
+}
+
+post_install() {
+	rm -f ${DESTDIR}/usr/share/fonts/TTF/Ubuntu-Nerd-Font/LICENCE.txt
+	rm -f ${DESTDIR}/usr/share/fonts/TTF/Ubuntu-Nerd-Font/LICENCE-FAQ.txt
+	rm -f ${DESTDIR}/usr/share/fonts/TTF/Ubuntu-Nerd-Font/README.md
+}

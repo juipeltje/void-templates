@@ -2,6 +2,7 @@
 pkgname=gruvbox-kvantum
 version=1.1
 revision=1
+depends="kvantum"
 short_desc="kvantum theme based on the gruvbox color palette"
 maintainer="juipeltje <joppe4444@outlook.com>"
 license="Public Domain"
