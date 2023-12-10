@@ -1,0 +1,21 @@
+# Template file for 'tokyo-night-gtk'
+pkgname=tokyo-night-gtk
+version=1
+revision=1
+hostmakedepends="git"
+short_desc="gtk theme based on the tokyonight neovim theme"
+maintainer="juipeltje <joppe4444@outlook.com>"
+license="GPL-3.0-only"
+homepage="https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme"
+
+do_fetch() {
+	git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme ${wrksrc}
+}
+
+do_install() {
+	vlicense LICENSE
+	vdoc README.md
+	vmkdir usr/share/themes
+	vcopy themes/Tokyonight-Dark-BL usr/share/themes/Tokyonight-Dark
+	vcopy themes/Tokyonight-Storm-BL usr/share/themes/Tokyonight-Storm
+}
