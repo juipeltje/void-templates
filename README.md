@@ -10,6 +10,7 @@ the following package templates are in my repo:
 - [fastfetch](#fastfetch)
 - [mint-y-icons](#mint-y-icons)
 - [phinger-cursors](#phinger-cursors)
+- [tokyo-night-gtk](#tokyo-night-gtk)
 - [nordic-gtk](#nordic-gtk)
 - [nordic-kvantum](#nordic-kvantum)
 - [gruvbox-material-gtk](#gruvbox-material-gtk)
@@ -79,6 +80,18 @@ cp -r void-templates/srcpkgs/phinger-cursors void-packages/srcpkgs/
 ```
 ./xbps-src pkg phinger-cursors
 sudo xbps-install -R hostdir/binpkgs phinger-cursors
+```
+
+## tokyo-night-gtk
+
+1. copy the `tokyo-night-gtk` folder into the `void-packages/srcpkgs` folder:
+```
+cp -r void-templates/srcpkgs/tokyo-night-gtk void-packages/srcpkgs/
+```
+2. cd into `void-packages`, then build and install the package:
+```
+./xbps-src pkg tokyo-night-gtk
+sudo xbps-install -R hostdir/binpkgs tokyo-night-gtk
 ```
 
 ## nordic-gtk
