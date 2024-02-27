@@ -1,0 +1,46 @@
+# Template file for 'vita3k'
+pkgname=vita3k
+version=0.1
+revision=1
+build_style=cmake
+cmake_builddir=build/linux-ninja-clang
+short_desc="Playstation Vita emulator"
+maintainer="juipeltje <joppe4444@outlook.com>"
+license="GPL-2.0-only"
+homepage="https://vita3k.org/"
+hostmakedepends="git clang pkg-config which ninja xdg-desktop-portal openssl libssl47"
+makedepends="lld-devel zlib-devel SDL2-devel lld-devel openssl-devel boost-devel"
+depends="xdg-desktop-portal"
+
+do_fetch() {
+	git clone --recursive https://github.com/Vita3K/Vita3K ${wrksrc}
+	cd ${wrksrc}
+	git submodule update --init --recursive
+}
+
+pre_configure() {
+	cmake --preset linux-ninja-clang -DUSE_VITA3K_UPDATE=OFF  
+}
+
+do_build() {
+	cmake --build ${cmake_builddir} --config Release
+}
+
+do_install() {
+	vdoc README.md
+	vmkdir opt
+	vcopy ${wrksrc}/build/linux-ninja-clang/bin/Release opt/${pkgname}
+	vmkdir usr/bin
+	ln -sf /opt/${pkgname}/Vita3K ${DESTDIR}/usr/bin/${pkgname}
+	vmkdir usr/share/icons/hicolor/128x128/apps
+	vinstall ${wrksrc}/build/linux-ninja-clang/bin/Release/data/image/icon.png 644 usr/share/icons/hicolor/128x128/apps/${pkgname}.png
+	vmkdir usr/share/applications
+	touch ${DESTDIR}/usr/share/applications/${pkgname}.desktop
+	chmod 644 ${DESTDIR}/usr/share/applications/${pkgname}.desktop
+	echo "[Desktop Entry]" >> ${DESTDIR}/usr/share/applications/${pkgname}.desktop
+	echo "Type=Application" >> ${DESTDIR}/usr/share/applications/${pkgname}.desktop
+	echo "Name=Vita3K" >> ${DESTDIR}/usr/share/applications/${pkgname}.desktop
+	echo "Icon=vita3k" >> ${DESTDIR}/usr/share/applications/${pkgname}.desktop
+	echo "Exec=vita3k" >> ${DESTDIR}/usr/share/applications/${pkgname}.desktop
+	echo "Categories=Game;Emulator;X-None;" >> ${DESTDIR}/usr/share/applications/${pkgname}.desktop
+}
