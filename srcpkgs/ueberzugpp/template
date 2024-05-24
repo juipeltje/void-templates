@@ -3,14 +3,15 @@ pkgname=ueberzugpp
 version=2.9.5
 revision=1
 build_style=cmake
-configure_args="-DCMAKE_BUILD_TYPE=Release -ENABLE_WAYLAND=ON"
-hostmakedepends="pkg-config"
-makedepends="libvips-devel libsixel-devel chafa-devel openssl-devel tbb-devel fmt-devel range-v3"
+configure_args="-DENABLE_WAYLAND=ON"
+hostmakedepends="cmake pkg-config"
+makedepends="libvips-devel libsixel-devel chafa-devel openssl-devel tbb-devel fmt-devel range-v3 
+		libwaylandpp-devel wayland-protocols xcb-util-image-devel extra-cmake-modules libopencv-devel"
 conflicts="ueberzug"
 short_desc="drop-in replacement for ueberzug written in c++ with wayland support"
 maintainer="juipeltje <joppe4444@outlook.com>"
 license="GPL-3.0-only"
 homepage="https://github.com/jstkdng/ueberzugpp"
-distfiles=https://github.com/jstkdng/ueberzugpp/archive/refs/tags/v${version}.tar.gz"
+distfiles="https://github.com/jstkdng/ueberzugpp/archive/refs/tags/v${version}.tar.gz"
 checksum="79c077ef8e158db3b5eb9d40512c9f9749383a29df9e3f7b11837481d1d90c74"
 

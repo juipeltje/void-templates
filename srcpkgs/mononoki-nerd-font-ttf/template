@@ -1,14 +1,14 @@
 # Template file for 'mononoki-nerd-font-ttf'
 pkgname=mononoki-nerd-font-ttf
-version=3.1.1
+version=3.2.1
 revision=1
-conflicts="nerd-fonts nerd-fonts-ttf nerd-fonts-symbols-ttf"
+conflicts="nerd-fonts nerd-fonts-ttf"
 short_desc="Mononoki font patched with icons"
 maintainer="juipeltje <joppe4444@outlook.com>"
 license="Apache-2.0, OFL-1.1, MIT, CC-BY-4.0, Unlicense, custom:Free License"
 homepage="https://www.nerdfonts.com/"
 distfiles="https://github.com/ryanoasis/nerd-fonts/releases/download/v${version}/Mononoki.tar.xz"
-checksum="2810ad90817b7271f11a8ac7ab7441d117ba12173c07af08fa243be7b721fa83"
+checksum="eb3697dd13c5e50951023c0768538a2f70e1e4f22d94800a45779a6d1b49f7a3"
 
 do_install() {
 	vlicense LICENSE.txt

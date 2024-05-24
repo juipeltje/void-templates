@@ -1,6 +1,6 @@
 # Template file for 'python3-colorlog'
 pkgname=python3-colorlog
-version=6.7.0
+version=6.8.2
 revision=1
 build_style=python3-module
 hostmakedepends="python3-setuptools"
@@ -10,7 +10,7 @@ maintainer="juipeltje <joppe4444@outlook.com>"
 license="MIT"
 homepage="https://pypi.org/project/colorlog/#description"
 distfiles="https://files.pythonhosted.org/packages/78/6b/4e5481ddcdb9c255b2715f54c863629f1543e97bc8c309d1c5c131ad14f2/colorlog-${version}.tar.gz"
-checksum="bd94bd21c1e13fac7bd3153f4bc3a7dc0eb0974b8bc2fdf1a989e474f6e582e5"
+checksum="3e3e079a41feb5a1b64f978b5ea4f46040a94f11f0e8bbb8261e3dbbeca64d44"
 
 post_install() {
 	vlicense LICENSE

@@ -1,6 +1,6 @@
 # Template file for 'mint-y-icons'
 pkgname=mint-y-icons
-version=1.6.9
+version=1.7.5
 revision=1
 depends="gtk-update-icon-cache hicolor-icon-theme"
 short_desc="mint-y icon theme from linux mint"
@@ -8,7 +8,7 @@ maintainer="juipeltje <joppe4444@outlook.com>"
 license="CC-BY-SA-4.0, GPL-3.0-only"
 homepage="https://linuxmint.com/"
 distfiles="https://github.com/linuxmint/${pkgname}/archive/refs/tags/${version}.tar.gz"
-checksum="d5713ec748196396ae5c7e234c3d992f01424f823d0cf626790ed4c74ac02ab6"
+checksum="f24f1d78e258ba16a6b6a30ce7c5a3ee1b0c30d1b7d7052648b22ae1e35a4185"
 
 do_install() {
 	vdoc README.md
