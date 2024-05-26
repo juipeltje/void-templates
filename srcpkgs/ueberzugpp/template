@@ -15,3 +15,8 @@ homepage="https://github.com/jstkdng/ueberzugpp"
 distfiles="https://github.com/jstkdng/ueberzugpp/archive/refs/tags/v${version}.tar.gz"
 checksum="79c077ef8e158db3b5eb9d40512c9f9749383a29df9e3f7b11837481d1d90c74"
 
+post_install() {
+	vlicense LICENSE
+	vdoc docs/ueberzugpp.1.in
+	vdoc README.md
+}
