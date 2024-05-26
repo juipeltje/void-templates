@@ -16,6 +16,6 @@ do_install() {
 	vlicense LICENSE
 	vdoc README.md
 	vmkdir usr/share/themes
-	vcopy themes/Tokyonight-Dark-BL usr/share/themes/Tokyonight-Dark
-	vcopy themes/Tokyonight-Storm-BL usr/share/themes/Tokyonight-Storm
+	cd ${wrksrc}/theme
+	./install.sh --dest ${DESTDIR}/usr/share/themes/
 }
