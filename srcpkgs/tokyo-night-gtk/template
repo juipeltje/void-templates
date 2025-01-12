@@ -2,7 +2,7 @@
 pkgname=tokyo-night-gtk
 version=1
 revision=1
-hostmakedepends="git"
+hostmakedepends="git sassc"
 depends="sassc gtk-engine-murrine"
 short_desc="gtk theme based on the tokyonight neovim theme"
 maintainer="juipeltje <joppe4444@outlook.com>"
