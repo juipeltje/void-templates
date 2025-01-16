@@ -1,13 +1,13 @@
 # Template file for 'phinger-cursors'
 pkgname=phinger-cursors
-version=2.0
+version=2.1
 revision=1
 short_desc="most likely the most over engineered cursor theme out there"
 maintainer="juipeltje <joppe4444@outlook.com>"
 license="CC-BY-SA-4.0"
 homepage="https://github.com/phisch/phinger-cursors"
 distfiles="https://github.com/phisch/${pkgname}/releases/download/v${version}/${pkgname}-variants.tar.bz2"
-checksum="035d811ad734fb00ea79218de256d47b91b73efe08b100784e4bd61e70d4e9b1"
+checksum="ddb7310c62bf8e0e2798a24f8a867e4af7b17a39757ba45c85e13f3988f646fc"
 
 do_install() {
 	vmkdir usr/share/icons

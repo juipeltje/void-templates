@@ -1,6 +1,6 @@
 # Template file for 'ubuntu-nerd-font-ttf'
 pkgname=ubuntu-nerd-font-ttf
-version=3.2.1
+version=3.3.0
 revision=1
 conflicts="nerd-fonts nerd-fonts-ttf" 
 short_desc="Ubuntu font patched with icons"
@@ -8,7 +8,7 @@ maintainer="juipeltje <joppe4444@outlook.com>"
 license="Apache-2.0, OFL-1.1, MIT, CC-BY-4.0, Unlicense, custom:Ubuntu Font License 1.0, custom:Free License"
 homepage="https://www.nerdfonts.com/"
 distfiles="https://github.com/ryanoasis/nerd-fonts/releases/download/v${version}/Ubuntu.tar.xz"
-checksum="6a254d48c837974e7c43fb92124e8e057c1d4b31c9ebe635f5c562233a24f3ad"
+checksum="4ff08c04bec3ec86b60d75a987b5c09d7e5c434f006f426bcfdac80f6f66d938"
 
 do_install() {
 	vlicense LICENCE.txt LICENSE

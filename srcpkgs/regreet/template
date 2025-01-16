@@ -1,6 +1,6 @@
 # Template file for 'regreet'
 pkgname=regreet
-version=0.1.1
+version=0.2.0
 revision=1
 build_style=cargo
 hostmakedepends="pkg-config"
@@ -11,7 +11,7 @@ maintainer="juipeltje <joppe4444@outlook.com>"
 license="GPL-3.0-or-later, MIT, CC0-1.0"
 homepage="https://github.com/rharish101/ReGreet"
 distfiles="https://github.com/rharish101/ReGreet/archive/refs/tags/${version}.tar.gz"
-checksum="a658c91cdf242dfea814f0bfd0c4d877bd39e3af498d36e5024061e3d07ea76b"
+checksum="6ce1f948feb75e12436eccc41557ad6a7127672f0658a9c9fbd5a412cebafc8a"
 
 post_install() {
 	vlicense LICENSE
