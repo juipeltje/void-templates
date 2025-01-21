@@ -13,6 +13,9 @@ the following package templates are in my repo:
 - gruvbox-material-gtk
 - ubuntu-nerd-font-ttf
 - mononoki-nerd-font-ttf
+- regreet
+- ueberzugpp (unmaintained)
+- vita3k (unmaintained)
 - nordic-kvantum (unmaintained)
 - gruvbox-kvantum (unmaintained)
 - picom-FT-Labs (unmaintained)
