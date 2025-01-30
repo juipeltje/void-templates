@@ -14,6 +14,7 @@ the following package templates are in my repo:
 - ubuntu-nerd-font-ttf
 - mononoki-nerd-font-ttf
 - regreet
+- river-bedload
 - ueberzugpp (unmaintained)
 - vita3k (unmaintained)
 - nordic-kvantum (unmaintained)
