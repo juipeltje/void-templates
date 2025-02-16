@@ -1,0 +1,22 @@
+# Template file for 'everforest-gtk'
+pkgname=everforest-gtk
+version=1
+revision=1
+hostmakedepends="git sassc"
+depends="sassc gtk-engine-murrine"
+short_desc="gtk theme based on the everforest neovim theme"
+maintainer="juipeltje <joppe4444@outlook.com>"
+license="GPL-3.0-only"
+homepage="https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme"
+
+do_fetch() {
+	git clone https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme ${wrksrc}
+}
+
+do_install() {
+	vlicense LICENSE
+	vdoc README.md
+	vmkdir usr/share/themes
+	cd ${wrksrc}/themes
+	./install.sh --dest ${DESTDIR}/usr/share/themes/
+}
