@@ -1,0 +1,16 @@
+# Template file for 'solarc-gtk'
+pkgname=solarc-gtk
+version=2.0.0
+revision=1
+depends="gnome-themes-extra gtk-engine-murrine"
+short_desc="fork of the arc-theme but with solarized colors"
+maintainer="juipeltje <joppe4444@outlook.com>"
+license="GPL-3.0-only"
+homepage="https://github.com/schemar/solarc-theme"
+distfiles="https://github.com/schemar/solarc-theme/releases/download/v${version}/solarc-theme-solid-v${version}.tar.xz"
+checksum="eddd678af06cb74c07c2c355153163b5b15798c9a0ede759c58760e9673eb880"
+
+do_install() {
+	vmkdir usr/share/themes
+	vcopy * usr/share/themes/
+}
