@@ -1,0 +1,15 @@
+# Template file for 'numix-solarized-gtk'
+pkgname=numix-solarized-gtk
+version=20230408
+revision=1
+short_desc="fork of the numix theme but with solarized colors"
+maintainer="juipeltje <joppe4444@outlook.com>"
+license="GPL-3.0-only"
+homepage="https://github.com/Ferdi265/numix-solarized-gtk-theme"
+distfiles="https://github.com/Ferdi265/numix-solarized-gtk-theme/releases/download/${version}/NumixSolarized-${version}.tar.gz"
+checksum="616d42a23dbc1b334e5eeeb89ef154ce48d8da9acd79db462db20cd187b0f5b2"
+
+do_install() {
+	vmkdir usr/share/themes
+	vcopy * usr/share/themes/
+}

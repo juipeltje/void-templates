@@ -1,0 +1,31 @@
+# Template file for 'dracula-gtk'
+pkgname=dracula-gtk
+version=4.0.0
+revision=1
+short_desc="dark theme for gtk"
+maintainer="juipeltje <joppe4444@outlook.com>"
+license="GPL-3.0-only"
+homepage="https://github.com/dracula/gtk"
+distfiles="https://github.com/dracula/gtk/releases/download/v${version}/Dracula.tar.xz"
+checksum="199bd4051b243fddadc625038686c7e8a91d4e8098868aadb4ca4c0c80911b6f"
+
+do_install() {
+	vlicense Dracula/LICENSE
+	vdoc Dracula/README.md
+	vmkdir usr/share/themes
+	vcopy * usr/share/themes/
+}
+
+post_install() {
+	rm -f ${DESTDIR}/usr/share/themes/Dracula/LICENSE
+	rm -f ${DESTDIR}/usr/share/themes/Dracula/README.md
+	rm -f ${DESTDIR}/usr/share/themes/Dracula-alt-style/LICENSE
+        rm -f ${DESTDIR}/usr/share/themes/Dracula-alt-style/README.md
+	rm -f ${DESTDIR}/usr/share/themes/Dracula-slim/LICENSE
+        rm -f ${DESTDIR}/usr/share/themes/Dracula-slim/README.md
+	rm -f ${DESTDIR}/usr/share/themes/Dracula-slim-standard-buttons/LICENSE
+        rm -f ${DESTDIR}/usr/share/themes/Dracula-slim-standard-buttons/README.md
+	rm -f ${DESTDIR}/usr/share/themes/Dracula-standard-buttons/LICENSE
+        rm -f ${DESTDIR}/usr/share/themes/Dracula-standard-buttons/README.md
+}
+

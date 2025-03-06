@@ -1,0 +1,24 @@
+# Template file for 'catppuccin-gtk'
+pkgname=catppuccin-gtk
+version=1
+revision=1
+hostmakedepends="git sassc"
+depends="sassc gtk-engine-murrine gnome-themes-extra"
+short_desc="gtk theme with catppuccin colour scheme"
+maintainer="juipeltje <joppe4444@outlook.com>"
+license="GPL-3.0-only"
+homepage="https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme"
+
+do_fetch() {
+	git clone --depth 1 https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme ${wrksrc}
+	cd ${wrksrc}
+	git checkout 0b007acd0220abab8d44cf06026b6bba5a774597
+}
+
+do_install() {
+	vlicense LICENSE
+	vdoc README.md
+	vmkdir usr/share/themes
+	cd ${wrksrc}/themes
+	./install.sh --dest ${DESTDIR}/usr/share/themes/
+}
