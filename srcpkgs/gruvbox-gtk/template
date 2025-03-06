@@ -1,18 +1,18 @@
-# Template file for 'everforest-gtk'
-pkgname=everforest-gtk
+# Template file for 'gruvbox-gtk'
+pkgname=gruvbox-gtk
 version=1
 revision=2
 hostmakedepends="git sassc"
 depends="sassc gtk-engine-murrine gnome-themes-extra"
-short_desc="gtk theme based on the everforest neovim theme"
+short_desc="gtk theme based on the gruvbox colour palette"
 maintainer="juipeltje <joppe4444@outlook.com>"
 license="GPL-3.0-only"
-homepage="https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme"
+homepage="https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme"
 
 do_fetch() {
-	git clone --depth 1 https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme ${wrksrc}
+	git clone --depth 1 https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme ${wrksrc}
 	cd ${wrksrc}
-	git checkout 43cbe4f1aeba8b46e41836de4c8ea7ac398db119
+	git checkout d064cd480a1e4802851b35bf051e48c808802c2a
 }
 
 do_install() {
