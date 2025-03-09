@@ -1,7 +1,7 @@
 # Template file for 'mint-y-icons'
 pkgname=mint-y-icons
 version=1.8.3
-revision=1
+revision=2
 depends="gtk-update-icon-cache hicolor-icon-theme"
 short_desc="mint-y icon theme from linux mint"
 maintainer="juipeltje <joppe4444@outlook.com>"
@@ -13,6 +13,6 @@ checksum="204f4b19bae7999cbe064eba6c29ec97d9b591f502bfe5b734f28fbaea4725f9"
 do_install() {
 	vdoc README.md
 	vmkdir usr/share/icons
-	vcopy ${wrksrc}/usr/share/icons/* usr/share/icons/
+	vcopy usr/share/icons/* usr/share/icons/
 }
 
