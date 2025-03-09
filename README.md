@@ -1,6 +1,6 @@
 # Void Linux template repo for building packages with xbps-src
 ## Summary
-This is my personal repo where i keep my template files that i use to build packages that i use on Void Linux. You can use these template files to build these packages yourself if you want. some of these templates are unmaintained because i am not using them anymore. these templates will be marked as "(unmaintained)" in the list down below.
+This is my personal repo where i keep my template files that i use to build packages that i use on Void Linux. You can use these template files to build these packages yourself if you want. some of these templates are unmaintained because i am not using them anymore. these templates will be marked as "(unmaintained)" in the list down below. of course you are free to still use those unmaintained templates and update them yourself if necessary.
 
 the following package templates are in my repo:
 
@@ -8,17 +8,24 @@ the following package templates are in my repo:
 - python3-hidapi (used as a dependency for liquidctl)
 - mint-y-icons
 - phinger-cursors
-- tokyo-night-gtk
 - nordic-gtk
-- gruvbox-material-gtk
+- gruvbox-gtk
+- tokyonight-gtk
+- everforest-gtk
+- numix-solarized-gtk
+- catppuccin-gtk
+- dracula-gtk
 - ubuntu-nerd-font-ttf
 - mononoki-nerd-font-ttf
-- regreet
 - river-bedload
+- rmpc
+- regreet (unmaintained)
 - ueberzugpp (unmaintained)
 - vita3k (unmaintained)
 - nordic-kvantum (unmaintained)
+- gruvbox-material-gtk (unmaintained)
 - gruvbox-kvantum (unmaintained)
+- solarc-gtk (unmaintained)
 - picom-FT-Labs (unmaintained)
 
 ## Setting up your system to build packages with template files
