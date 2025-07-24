@@ -2,7 +2,7 @@
 ## Important note!
 ### I don't use any of the templates in this repo anymore due to me now using nix + home manager to install most of my packages on top of Void, which means it's highly likely that all of them are out of date by now. Of course you are free to still use these templates and update them yourself if necessary.
 
-the following package templates are in my repo:
+#### the following package templates are in my repo:
 
 - liquidctl
 - python3-hidapi (used as a dependency for liquidctl)
