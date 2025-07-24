@@ -1,6 +1,6 @@
 # Void Linux template repo for building packages with xbps-src
-## Summary
-This is my personal repo where i keep my template files that i use to build packages that i use on Void Linux. You can use these template files to build these packages yourself if you want. some of these templates are unmaintained because i am not using them anymore. these templates will be marked as "(unmaintained)" in the list down below. of course you are free to still use those unmaintained templates and update them yourself if necessary.
+## Important note!
+### I don't use any of the templates in this repo anymore due to me now using nix + home manager to install most of my packages on top of Void, which means it's highly likely that all of them are out of date by now. Of course you are free to still use these templates and update them yourself if necessary.
 
 the following package templates are in my repo:
 
@@ -19,14 +19,14 @@ the following package templates are in my repo:
 - mononoki-nerd-font-ttf
 - river-bedload
 - rmpc
-- regreet (unmaintained)
-- ueberzugpp (unmaintained)
-- vita3k (unmaintained)
-- nordic-kvantum (unmaintained)
-- gruvbox-material-gtk (unmaintained)
-- gruvbox-kvantum (unmaintained)
-- solarc-gtk (unmaintained)
-- picom-FT-Labs (unmaintained)
+- regreet
+- ueberzugpp
+- vita3k
+- nordic-kvantum
+- gruvbox-material-gtk
+- gruvbox-kvantum
+- solarc-gtk
+- picom-FT-Labs
 
 ## Setting up your system to build packages with template files
 1. make sure to follow the instructions on how to setup `xbps-src` first on the `void-packages` Github page: https://github.com/void-linux/void-packages <br />
